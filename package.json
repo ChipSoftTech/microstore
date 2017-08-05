@@ -1,0 +1,35 @@
+{
+  "name": "microstore",
+  "version": "1.9.0",
+  "description": "Microstore: micro data store using file-based REST API",
+  "keywords": [
+    "REST",
+    "Database"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chipsofttech/"
+  },
+  "author": "Chippewa Software Technology",
+  "license": "ISC",
+  "bin": {
+    "microstore": "bin/microstore"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "compression": "^1.6.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.1",
+    "tsutil": "^6.1.1",
+    "yargs": "^6.6.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.0.35",
+    "@types/node": "^7.0.4",
+    "tslint": "^4.4.2",
+    "typescript": "^2.2.2"
+  }
+}

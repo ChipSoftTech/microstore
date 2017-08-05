@@ -1,10 +1,10 @@
 import { argv } from 'yargs';
 
 const PORT = process.env.PORT || 3000;
-const DATA_DIR = './';
+const DATA_DIR = './data/';
 const API_ROOT = '/api';
 const REPLY_DELAY = 0;
-const WRITE_DELAY = 200;
+const WRITE_DELAY = 500;
 
 
 export function getConfig() {

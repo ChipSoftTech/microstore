@@ -2,15 +2,15 @@
 A micro application used to store data.  File based RESTful API.  Useful for microservices or client side applications that need a simple data store.  
 
 ## Run
-npm install
-npm run-script build
-node ./lib/server.js
+npm install  
+npm run-script build  
+node ./lib/server.js  
 
 ## Usage
 Data is stored in JSON files, one file per api route. For example, all requests to `/api/users` will read and update from users.json.
 
 ### Usage example
-1. Start server, storing files in the `json` directory: `microstore --data json`.
+1. Start server, storing files in the `json` directory: `microstore --data data`.
 2. Add a record from the command line: `curl http://localhost:3000/api/contacts -H "Content-Type: application/json" -d '{ "name": "Brian Carter", "email": "briancarter@chipsofttech.com" }' -X POST`
 3. Query all records from the command line: `curl http://localhost:3000/api/contacts`
 
@@ -23,9 +23,9 @@ Data is stored in JSON files, one file per api route. For example, all requests 
 
 ### Command-line parameters
 - `--port`: HTTP port to be used. Defaults to 3000.
-- `--data`: directory used to store JSON files. Defaults to working directory.
+- `--data`: directory used to store JSON files. Defaults to working directory /data.
 - `--prefix`: API prefix. Defaults to /api.
 - `--static`: directory used for static content. Disabled by default.
 - `--delay`: response delay in milliseconds. Defaults to 0.
-- `--write-time`: interval between file updates in milliseconds. Defaults to 100. If set to 0, data will not be written to file.
+- `--write-time`: interval between file updates in milliseconds. Defaults to 500. If set to 0, data will not be written to file.
 - `--disable-cors`: enable/disable CORS. It is enabled by default, so that requests can be sent from pages served from any host or port.

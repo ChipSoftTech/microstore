@@ -29,3 +29,7 @@ Data is stored in JSON files, one file per api route. For example, all requests 
 - `--delay`: response delay in milliseconds. Defaults to 0.
 - `--write-time`: interval between file updates in milliseconds. Defaults to 500. If set to 0, data will not be written to file.
 - `--disable-cors`: enable/disable CORS. It is enabled by default, so that requests can be sent from pages served from any host or port.
+
+Inspired from:
+https://github.com/vuejs/vue-cli  
+https://github.com/lcrespom/resty  
